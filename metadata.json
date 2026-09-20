@@ -1,0 +1,7 @@
+{
+  "name": "MedPulse 1000 MCQ Platform",
+  "description": "Comprehensive academic testing platform with 1,000 MCQs, timed test simulations, real-time student analytics, subject mastery tracking, and competitive leaderboard rankings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
