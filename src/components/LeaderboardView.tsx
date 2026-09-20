@@ -282,7 +282,7 @@ export const LeaderboardView: React.FC<LeaderboardViewProps> = ({
             Academic Rankings Remix • Live Cohort League
           </h1>
           <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
-            Real-time standings across 1,000 anatomy MCQs, speed metrics, accuracy scores, and streaks.
+            Real-time standings across 400 curriculum MCQs, speed metrics, accuracy scores, and streaks.
           </p>
         </div>
 
@@ -397,7 +397,7 @@ export const LeaderboardView: React.FC<LeaderboardViewProps> = ({
               <div className="text-center px-2 border-l border-white/10">
                 <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">Questions</span>
                 <span className="text-xl sm:text-2xl font-black text-white">{currentUserEntry.questionsCompleted}</span>
-                <span className="text-[10px] text-slate-400 block mt-0.5">of 1,000 MCQs</span>
+                <span className="text-[10px] text-slate-400 block mt-0.5">of 400 MCQs</span>
               </div>
               <div className="text-center px-2 border-l border-white/10">
                 <span className="text-[11px] uppercase tracking-wider text-slate-400 block font-semibold">Study Streak</span>
@@ -750,7 +750,7 @@ export const LeaderboardView: React.FC<LeaderboardViewProps> = ({
                       {/* Questions Solved */}
                       <td className="hidden md:table-cell py-3.5 px-3 text-center font-mono">
                         <span className="font-bold text-slate-800">{entry.questionsCompleted}</span>{' '}
-                        <span className="text-slate-400">/ 1000</span>
+                        <span className="text-slate-400">/ 400</span>
                       </td>
 
                       {/* Accuracy */}
@@ -857,14 +857,14 @@ export const LeaderboardView: React.FC<LeaderboardViewProps> = ({
               Cohort Distinction & Platform Hall of Fame
             </h4>
             <p className="leading-relaxed">
-              Honoring <strong>Mustafa</strong> and <strong>Prabu</strong> for constructing the MedPulse GEDU404B 1,000 MCQ Academic Engine, curating verified pathophysiological rationales, and designing the cohort testing simulator.
+              Honoring <strong>Mustafa</strong> and <strong>Prabu</strong> for constructing the MedPulse GEDU404B 400 MCQ Academic Engine, curating verified pathophysiological rationales, and designing the cohort testing simulator.
             </p>
             <div className="pt-2 flex flex-wrap items-center gap-4 text-[11px] font-semibold text-slate-600">
               <span className="flex items-center gap-1 text-emerald-700">
-                <CheckCircle2 className="w-3.5 h-3.5" /> 1,000 Curated MCQs
+                <CheckCircle2 className="w-3.5 h-3.5" /> 400 Curated MCQs
               </span>
               <span className="flex items-center gap-1 text-blue-700">
-                <ShieldCheck className="w-3.5 h-3.5" /> 8 Academic Modules
+                <ShieldCheck className="w-3.5 h-3.5" /> 4 Curriculum Modules
               </span>
               <span className="flex items-center gap-1 text-amber-700">
                 <Crown className="w-3.5 h-3.5" /> Grandmaster Honor Roll

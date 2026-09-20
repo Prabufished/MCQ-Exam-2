@@ -21,7 +21,7 @@ import {
   Layers,
   ArrowRight,
 } from 'lucide-react';
-import { MCQQuestion, SubjectId, TestSession, StudentProfile } from '../types';
+import { MCQQuestion, SubjectId, TestSession, StudentProfile, Difficulty } from '../types';
 import { SUBJECTS } from '../data/subjects';
 import { getAllQuestions, getQuestionsBySubject } from '../data/questionsBank';
 import {
@@ -54,6 +54,7 @@ export const QuizRunner: React.FC<QuizRunnerProps> = ({
   const [timerMode, setTimerMode] = useState<'stopwatch' | 'timed'>('timed');
   const [timeLimitMinutes, setTimeLimitMinutes] = useState<number>(25); // default 1 min/q
   const [questionFilter, setQuestionFilter] = useState<'all' | 'unanswered' | 'flagged' | 'incorrect'>('all');
+  const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | 'all'>('all');
 
   // Active Quiz State
   const [activeQuestions, setActiveQuestions] = useState<MCQQuestion[]>([]);
@@ -126,6 +127,12 @@ export const QuizRunner: React.FC<QuizRunnerProps> = ({
     } else if (questionFilter === 'incorrect') {
       const incorrect = pool.filter((q) => answeredMap[q.id] && !answeredMap[q.id].isCorrect);
       pool = incorrect.length > 0 ? incorrect : pool;
+    }
+
+    // Apply difficulty filter if selected
+    if (selectedDifficulty !== 'all') {
+      const byDiff = pool.filter((q) => q.difficulty === selectedDifficulty);
+      pool = byDiff.length > 0 ? byDiff : pool;
     }
 
     // Shuffle pool
@@ -1020,28 +1027,54 @@ export const QuizRunner: React.FC<QuizRunnerProps> = ({
           </div>
         </div>
 
-        {/* 3. Number of Questions */}
-        <div>
-          <label className="block text-sm font-bold text-slate-900 mb-3">
-            3. Number of Questions
-          </label>
-          <div className="flex flex-wrap gap-2 sm:gap-3">
-            {[10, 25, 50, 100, 125].map((count) => (
-              <button
-                key={count}
-                onClick={() => {
-                  setQuestionCount(count);
-                  setTimeLimitMinutes(count); // default 1 min / question
-                }}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
-                  questionCount === count
-                    ? 'bg-blue-600 text-white shadow-xs'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                }`}
-              >
-                {count} Questions
-              </button>
-            ))}
+        {/* 3. Number of Questions & Difficulty */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label className="block text-sm font-bold text-slate-900 mb-3">
+              3. Number of Questions
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {[10, 25, 50, 100].map((count) => (
+                <button
+                  key={count}
+                  onClick={() => {
+                    setQuestionCount(count);
+                    setTimeLimitMinutes(count); // default 1 min / question
+                  }}
+                  className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all ${
+                    questionCount === count
+                      ? 'bg-blue-600 text-white shadow-xs'
+                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  }`}
+                >
+                  {count} Questions
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-bold text-slate-900 mb-3">
+              Difficulty Tier
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {(['all', 'Medium', 'Hard', 'Easy'] as const).map((diff) => (
+                <button
+                  key={diff}
+                  onClick={() => setSelectedDifficulty(diff)}
+                  className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all ${
+                    selectedDifficulty === diff
+                      ? 'bg-blue-600 text-white shadow-xs'
+                      : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  }`}
+                >
+                  {diff === 'all' ? 'All Tiers' : diff}
+                </button>
+              ))}
+            </div>
+            <p className="text-xs text-slate-500 mt-2">
+              Filter by question complexity (e.g. Medium & Hard for clinical exam preparation).
+            </p>
           </div>
         </div>
 

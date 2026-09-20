@@ -77,7 +77,7 @@ export interface StudentAnalytics {
   totalCorrect: number;
   totalIncorrect: number;
   accuracyRate: number;
-  overallCompletionRate: number; // out of 1000
+  overallCompletionRate: number; // out of 400
   averageTimePerQuestion: number;
   totalStudyTimeSeconds: number;
   streakDays: number;

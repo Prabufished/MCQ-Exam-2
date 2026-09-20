@@ -130,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
                 <div className="text-[11px] text-slate-500 flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                  <span>{analytics.totalAnswered} / 1000 done</span>
+                  <span>{analytics.totalAnswered} / 400 done</span>
                 </div>
               </div>
             </button>

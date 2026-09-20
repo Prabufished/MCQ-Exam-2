@@ -186,7 +186,7 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
-            All Subjects (1,000)
+            All Subjects (400)
           </button>
           {SUBJECTS.map((sub) => {
             const isSel = selectedSubject === sub.id;
