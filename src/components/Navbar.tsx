@@ -30,12 +30,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-bold text-lg text-slate-900 tracking-tight">MedPulse</span>
+                <span className="font-bold text-lg text-slate-900 tracking-tight">GEDU404B Revision</span>
                 <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-blue-50 text-blue-700 border border-blue-200">
-                  1,000 MCQs
+                  400 MCQs
                 </span>
               </div>
-              <p className="text-xs text-slate-500 hidden sm:block">Human Anatomy & Academic Science Platform</p>
+              <p className="text-xs text-slate-500 hidden sm:block">Applied Structure & Function of the Human Body</p>
             </div>
           </div>
 
@@ -64,9 +64,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               <BookOpen className="w-4 h-4" />
-              <span>1000 Bank</span>
+              <span>Question Bank</span>
               <span className="hidden md:inline-flex items-center px-1.5 py-0.5 rounded text-xs font-semibold bg-slate-100 text-slate-600">
-                All Qs
+                400 Qs
               </span>
             </button>
 

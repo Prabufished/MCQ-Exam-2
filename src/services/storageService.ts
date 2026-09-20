@@ -253,7 +253,9 @@ export function getStudentAnalytics(studentId: string): StudentAnalytics {
   const totalCorrect = answersList.filter((a) => a.isCorrect).length;
   const totalIncorrect = totalAnswered - totalCorrect;
   const accuracyRate = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 1000) / 10 : 0;
-  const overallCompletionRate = Math.round((totalAnswered / 1000) * 1000) / 10;
+  const allQuestions = getAllQuestions();
+  const totalBankCount = allQuestions.length || 400;
+  const overallCompletionRate = Math.round((totalAnswered / totalBankCount) * 1000) / 10;
 
   let totalStudyTimeSeconds = 0;
   answersList.forEach((a) => {
@@ -263,19 +265,14 @@ export function getStudentAnalytics(studentId: string): StudentAnalytics {
   const averageTimePerQuestion = totalAnswered > 0 ? Math.round(totalStudyTimeSeconds / totalAnswered) : 0;
 
   // Subject performance calculation
-  const allQuestions = getAllQuestions();
   const questionMap = new Map<number, typeof allQuestions[0]>();
   allQuestions.forEach((q) => questionMap.set(q.id, q));
 
   const subjectPerformance: StudentAnalytics['subjectPerformance'] = {
-    cardiovascular: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    tissues_integumentary: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    blood_hematology: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    respiratory: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    cell_biology: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    chemistry: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    physics_biomechanics: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
-    systems_physiology: { attempted: 0, correct: 0, total: 125, accuracy: 0 },
+    cardiovascular: { attempted: 0, correct: 0, total: allQuestions.filter(q => q.subjectId === 'cardiovascular').length || 100, accuracy: 0 },
+    tissues_integumentary: { attempted: 0, correct: 0, total: allQuestions.filter(q => q.subjectId === 'tissues_integumentary').length || 100, accuracy: 0 },
+    blood_hematology: { attempted: 0, correct: 0, total: allQuestions.filter(q => q.subjectId === 'blood_hematology').length || 100, accuracy: 0 },
+    respiratory: { attempted: 0, correct: 0, total: allQuestions.filter(q => q.subjectId === 'respiratory').length || 100, accuracy: 0 },
   };
 
   answersList.forEach((ans) => {

@@ -905,7 +905,7 @@ export const QuizRunner: React.FC<QuizRunnerProps> = ({
   // VIEW 3: QUIZ SETUP CONFIGURATION SCREEN
   // -------------------------------------------------------------
   const subjectOptions = [
-    { id: 'all' as const, name: 'All 8 Academic Subjects (Full 1,000 MCQ Bank)', questions: 1000, color: 'border-blue-500' },
+    { id: 'all' as const, name: 'All 4 Curriculum Modules (Full 400 MCQ Bank)', questions: 400, color: 'border-blue-500' },
     ...SUBJECTS.map((s) => ({
       id: s.id,
       name: s.name,
@@ -921,13 +921,13 @@ export const QuizRunner: React.FC<QuizRunnerProps> = ({
         <div className="relative z-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold mb-3">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>GEDU404B Human Body & Academic Science Curriculum</span>
+            <span>GEDU404B / 2602 Curriculum Modules</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">
             Practice & Timed Exam Simulator
           </h1>
           <p className="text-slate-300 text-sm leading-relaxed mb-4">
-            Test your knowledge across 1,000 curated questions in Cardiovascular, Tissues, Blood, Respiratory, Cell Biology, Chemistry, Physics, and Physiology.
+            Test your knowledge across 400 curated questions strictly from your 4 GEDU404B modules: Cardiovascular (Mod 7), Tissues & Integumentary (Mod 5), Blood & Hematology (Mod 6), and Respiratory (Mod 8).
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-300">

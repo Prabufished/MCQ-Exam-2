@@ -93,7 +93,7 @@ export const AnalyticsDashboard: React.FC<AnalyticsDashboardProps> = ({
             </div>
             <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">
               {analytics.totalAnswered}{' '}
-              <span className="text-xs font-normal text-slate-500">/ 1,000</span>
+              <span className="text-xs font-normal text-slate-500">/ 400</span>
             </div>
             <div className="mt-2 text-xs text-slate-500 flex items-center gap-1.5">
               <div className="flex-1 h-1.5 bg-slate-200 rounded-full overflow-hidden">

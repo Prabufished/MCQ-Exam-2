@@ -121,13 +121,13 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">1,000 Questions Repository</h1>
+            <h1 className="text-2xl font-bold text-slate-900 tracking-tight">GEDU404B Question Repository</h1>
             <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
               {allQuestions.length} Questions Indexed
             </span>
           </div>
           <p className="text-xs text-slate-500">
-            Browse, search, review rationales, and bookmark across all 8 academic modules.
+            Browse, search, review rationales, and bookmark across the 4 GEDU404B curriculum modules.
           </p>
         </div>
 
@@ -136,13 +136,13 @@ export const QuestionExplorer: React.FC<QuestionExplorerProps> = ({
           <div>
             <div className="text-[11px] font-semibold text-slate-500 uppercase">Bank Coverage</div>
             <div className="text-base font-extrabold text-slate-900">
-              {Object.keys(answersMap).length} <span className="text-xs font-normal text-slate-500">/ 1,000</span>
+              {Object.keys(answersMap).length} <span className="text-xs font-normal text-slate-500">/ {allQuestions.length}</span>
             </div>
           </div>
           <div className="w-24 h-2 bg-slate-100 rounded-full overflow-hidden">
             <div
               className="h-full bg-blue-600 rounded-full"
-              style={{ width: `${(Object.keys(answersMap).length / 1000) * 100}%` }}
+              style={{ width: `${(Object.keys(answersMap).length / (allQuestions.length || 1)) * 100}%` }}
             />
           </div>
         </div>

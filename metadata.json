@@ -1,6 +1,6 @@
 {
-  "name": "MedPulse 1000 MCQ Platform",
-  "description": "Comprehensive academic testing platform with 1,000 MCQs, timed test simulations, real-time student analytics, subject mastery tracking, and competitive leaderboard rankings.",
+  "name": "GEDU404B Human Body Revision Platform",
+  "description": "Comprehensive interactive revision and testing platform for GEDU404B/2602 Applied Structure and Function of the Human Body, covering Tissues & Integumentary System, Blood & Hematology, Cardiovascular System, and Respiratory System with detailed clinical explanations.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

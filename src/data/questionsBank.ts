@@ -510,6 +510,86 @@ const rawTissuesSeed: Omit<MCQQuestion, 'id' | 'subjectId' | 'subjectName'>[] = 
     difficulty: 'Easy',
     sourceReference: 'GEDU404B 5.2 Lab',
   },
+  {
+    subtopic: 'Tissue Function Pairing',
+    question: 'Which of the following pairings between tissue type and physiological function is NOT correct?',
+    options: [
+      'Epithelial – protection and lining',
+      'Connective – protecting, supporting, and binding',
+      'Muscle – endocrine hormone regulation',
+      'Nervous – communication and electrical impulses',
+    ],
+    correctAnswer: 2,
+    explanation: 'Endocrine secretion is carried out by specialized glandular epithelium, whereas muscle tissue specializes in contraction to produce movement.',
+    keyTakeaway: 'Muscle specializes in contraction and motion, NOT endocrine secretion.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.3 Revision',
+  },
+  {
+    subtopic: 'Epithelial Barrier',
+    question: 'Which fundamental tissue category acts as the primary protective barrier against physical trauma, pathogens, and chemical damage from the external environment?',
+    options: ['Muscle tissue', 'Epithelial tissue', 'Nervous tissue', 'Dense osseous tissue'],
+    correctAnswer: 1,
+    explanation: 'Epithelial tissue forms continuous sheets covering the exterior of the body and lining all internal cavities exposed to the outside.',
+    keyTakeaway: 'Epithelial tissue forms the body’s primary barrier against the external environment.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.3 Revision',
+  },
+  {
+    subtopic: 'Tissue Distribution',
+    question: 'Epithelial tissue lines hollow cavities and body surfaces throughout the body, but is NOT found in which of the following structures?',
+    options: ['Epidermis of the skin', 'Lining of the stomach', 'Heart muscle (myocardium)', 'Respiratory airways'],
+    correctAnswer: 2,
+    explanation: 'The heart muscle (myocardium) is composed of specialized striated cardiac muscle tissue, not epithelial tissue.',
+    keyTakeaway: 'Epithelial tissue is NOT found in the heart muscle (myocardium).',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.3 Revision',
+  },
+  {
+    subtopic: 'Bone Function',
+    question: 'Which specialized connective tissue is responsible for supporting the body, storing mineral salts and triglycerides (fat), and housing red marrow that produces blood cells?',
+    options: ['Adipose tissue only', 'Hyaline cartilage', 'Bone (osseous tissue)', 'Elastic connective tissue'],
+    correctAnswer: 2,
+    explanation: 'Bone provides structural framework, protects organs, stores calcium/phosphorus and yellow adipose marrow, and contains red marrow for haematopoiesis.',
+    keyTakeaway: 'Bone stores fat in yellow marrow and manufactures blood cells in red marrow.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.2 Lab & 5.3 Revision',
+  },
+  {
+    subtopic: 'Sebaceous Gland Physiology',
+    question: 'Which of the following statements concerning sebum secreted by cutaneous glands is FALSE?',
+    options: [
+      'It is an oily lipid substance secreted by sebaceous glands',
+      'It is the pigment that is responsible for the colour of the skin',
+      'It helps soften and lubricate hair and skin',
+      'It contains bactericidal chemicals that inhibit bacterial growth',
+    ],
+    correctAnswer: 1,
+    explanation: 'Melanin, produced by melanocytes, is the pigment responsible for skin color; sebum is an oily secretion produced by sebaceous glands.',
+    keyTakeaway: 'Sebum is an oily lubricant; melanin is the pigment responsible for skin colour.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.3 Revision',
+  },
+  {
+    subtopic: 'Dermal Histology',
+    question: 'The deeper, thicker structural layer of the skin, known as the dermis, is predominantly made up of which tissue type?',
+    options: ['Stratified squamous epithelium', 'Connective tissue', 'Smooth muscle', 'Nervous tissue'],
+    correctAnswer: 1,
+    explanation: 'The dermis consists primarily of dense irregular connective tissue rich in collagen and elastin fibers providing tensile strength.',
+    keyTakeaway: 'The dermis is mostly composed of connective tissue.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.3 Revision',
+  },
+  {
+    subtopic: 'Joint Cartilage',
+    question: 'In butchered animal meat (such as chicken), tough pearly-white "gristle" found cushioning the articulating ends of bones represents which connective tissue?',
+    options: ['Adipose tissue', 'Cartilage', 'Fibroelastic tendon', 'Smooth muscle'],
+    correctAnswer: 1,
+    explanation: 'Gristle is hyaline cartilage, which caps the ends of articulating bones to reduce friction and absorb mechanical shocks at joints.',
+    keyTakeaway: 'Gristle = cartilage; cushions bone ends in joints to reduce friction.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 5.2 Lab',
+  },
 ];
 
 const rawBloodSeed: Omit<MCQQuestion, 'id' | 'subjectId' | 'subjectName'>[] = [
@@ -698,6 +778,161 @@ const rawBloodSeed: Omit<MCQQuestion, 'id' | 'subjectId' | 'subjectName'>[] = [
     difficulty: 'Medium',
     sourceReference: 'GEDU404B 6.2 Lab',
   },
+  {
+    subtopic: 'Blood as Connective Tissue',
+    question: 'Why is whole blood scientifically classified as a specialized form of connective tissue?',
+    options: [
+      'Because it connects directly to the central nervous system synapses',
+      'Because it consists of living cells suspended in a non-living fluid matrix with dissolved fibrous proteins (fibrinogen) that become visible fibers during clotting',
+      'Because it is composed purely of keratin and collagen fibers',
+      'Because it is secreted by the endocrine pancreas',
+    ],
+    correctAnswer: 1,
+    explanation: 'Like all connective tissues, blood has cellular components and an extracellular matrix (plasma) containing dissolved protein fibers that polymerize into insoluble fibrin upon coagulation.',
+    keyTakeaway: 'Blood is connective tissue because it has cells and dissolved fibrous proteins that form fibrin.',
+    difficulty: 'Medium',
+    sourceReference: 'GEDU404B 6.0 Pre-learning',
+  },
+  {
+    subtopic: 'Centrifugation Layers',
+    question: 'Following centrifugation of a blood sample in a capillary tube, the packed red bottom layer consists of cells primarily responsible for:',
+    options: [
+      'Phagocytizing foreign pathogens',
+      'Carrying oxygen molecules bound to hemoglobin',
+      'Initiating the vascular clotting cascade',
+      'Maintaining electrolyte osmotic balance',
+    ],
+    correctAnswer: 1,
+    explanation: 'The bottom dense red sediment consists of packed erythrocytes (RBCs), which carry oxygen from pulmonary capillaries to peripheral tissues.',
+    keyTakeaway: 'Bottom red layer of centrifuged blood contains erythrocytes that carry oxygen.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.3 Revision',
+  },
+  {
+    subtopic: 'Plasma Solutes',
+    question: 'The top straw-coloured liquid layer of centrifuged blood (plasma) contains which of the following vital substances?',
+    options: [
+      'Water (over 90%)',
+      'Nutrients and hormones',
+      'Electrolytes and soluble plasma proteins',
+      'All of these',
+    ],
+    correctAnswer: 3,
+    explanation: 'Blood plasma is approximately 91-92% water containing dissolved electrolytes (Na+, K+, Cl-), nutrients (glucose, amino acids), hormones, gases, and proteins (albumin, globulins, fibrinogen).',
+    keyTakeaway: 'Plasma contains water, nutrients, electrolytes, hormones, and proteins (all of these).',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.3 Revision',
+  },
+  {
+    subtopic: 'Laboratory Technique',
+    question: 'When collecting a blood sample into a microhematocrit capillary tube for centrifugal packed cell volume (PCV) analysis, the tube should ideally be filled:',
+    options: [
+      'Only 10% to prevent overflow',
+      'Completely full (or at least two-thirds full of blood)',
+      'With exactly one drop of blood diluted with saline',
+      'Completely full of distilled water with a trace of blood',
+    ],
+    correctAnswer: 1,
+    explanation: 'For reliable haematocrit measurement and seal placement, the capillary tube should be filled at least two-thirds to completely full by capillary action.',
+    keyTakeaway: 'Capillary tube should be completely full (or at least two-thirds full) of blood.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Clinical Blood Chemistry',
+    question: 'A patient’s fasting blood glucose is measured at 2.5 mmol/L (standard reference range: 4.0 – 7.0 mmol/L). How should this laboratory value be interpreted?',
+    options: [
+      'Normal fasting glucose level',
+      'Low (hypoglycemia)',
+      'High (hyperglycemia)',
+      'Severely elevated ketoacidosis',
+    ],
+    correctAnswer: 1,
+    explanation: 'A blood glucose level of 2.5 mmol/L is below the normal reference range of 4.0–7.0 mmol/L, indicating hypoglycemia which can cause tremors, diaphoresis, and altered mental status.',
+    keyTakeaway: 'Blood glucose of 2.5 mmol/L is low (hypoglycemia).',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Clinical Hematology',
+    question: 'A female student (Stephanie) has her hemoglobin concentration measured at 138 g/L (adult female reference range: 115 – 165 g/L). How is this result clinically classified?',
+    options: [
+      'Microcytic anemia',
+      'Normal hemoglobin level',
+      'Erythrocytosis / polycythemia',
+      'Critically low panic value',
+    ],
+    correctAnswer: 1,
+    explanation: 'Stephanie’s hemoglobin of 138 g/L falls well within the healthy female adult reference interval of 115–165 g/L, representing normal oxygen-carrying capacity.',
+    keyTakeaway: 'Hemoglobin of 138 g/L is normal for an adult female.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Vascular Pathology',
+    question: 'What lesion occurs when superficial dermal capillary vessels rupture without any disruption or breakage of the overlying skin surface?',
+    options: ['Laceration', 'Bruise (contusion / ecchymosis)', 'Incision', 'Puncture wound'],
+    correctAnswer: 1,
+    explanation: 'A bruise (contusion/ecchymosis) results from blunt trauma rupturing capillaries beneath intact skin, allowing blood to extravasate into surrounding subcutaneous tissues.',
+    keyTakeaway: 'Broken capillaries without skin damage produce a bruise.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Hemostasis Initiation',
+    question: 'When a blood vessel sustains an endothelial laceration, which formed elements are the very first to adhere to the exposed subendothelial collagen?',
+    options: [
+      'Erythrocytes (red blood cells)',
+      'Platelets (thrombocytes)',
+      'Neutrophils',
+      'Lymphocytes',
+    ],
+    correctAnswer: 1,
+    explanation: 'Von Willebrand factor anchors circulating platelets to exposed subendothelial collagen fibers within seconds of endothelial injury, triggering the platelet plug formation.',
+    keyTakeaway: 'Platelets are the first formed elements attracted to vessel injury.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Coagulation Trigger',
+    question: 'What biochemical event causes circulating soluble fibrinogen to convert into an insoluble, sticky meshwork of fibrin fibers during hemostasis?',
+    options: [
+      'Exposure to chemicals and tissue factors not usually encountered in an intact, undamaged blood vessel',
+      'Chilling of blood below 32°C',
+      'A decrease in plasma sodium concentration',
+      'Direct exposure to arterial carbon dioxide',
+    ],
+    correctAnswer: 0,
+    explanation: 'Exposure to extravascular tissue factor (Factor III) and subendothelial collagen triggers the coagulation enzyme cascade, activating thrombin which cleaves fibrinogen into sticky fibrin strands.',
+    keyTakeaway: 'Exposure to chemicals not found in an intact vessel triggers fibrin mesh formation.',
+    difficulty: 'Medium',
+    sourceReference: 'GEDU404B 6.2 Lab',
+  },
+  {
+    subtopic: 'Hematopoiesis Definition',
+    question: 'The continuous biological process of producing, developing, and maturing new blood cells within red bone marrow is termed:',
+    options: ['Hemostasis', 'Haematopoiesis (hemopoiesis)', 'Hemolysis', 'Erythroblastosis'],
+    correctAnswer: 1,
+    explanation: 'Haematopoiesis is the ongoing production of all blood cells (erythrocytes, leukocytes, thrombocytes) from pluripotent hematopoietic stem cells in the red bone marrow.',
+    keyTakeaway: 'Haematopoiesis is the production of new blood cells.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.3 Revision',
+  },
+  {
+    subtopic: 'ABO Blood Grouping',
+    question: 'An individual with Type B blood possesses which antigens on their red blood cells and which antibodies in their blood plasma?',
+    options: [
+      'B antigens on RBCs and anti-A antibodies in plasma',
+      'A antigens on RBCs and anti-B antibodies in plasma',
+      'Both A and B antigens on RBCs and no antibodies in plasma',
+      'Neither A nor B antigens on RBCs and anti-B antibodies in plasma',
+    ],
+    correctAnswer: 0,
+    explanation: 'Type B individuals express B carbohydrate antigens on erythrocyte membranes and naturally produce anti-A isohemagglutinins in their plasma.',
+    keyTakeaway: 'Type B blood has B antigens and anti-A antibodies.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 6.3 Revision',
+  },
 ];
 
 const rawRespiratorySeed: Omit<MCQQuestion, 'id' | 'subjectId' | 'subjectName'>[] = [
@@ -765,6 +1000,66 @@ const rawRespiratorySeed: Omit<MCQQuestion, 'id' | 'subjectId' | 'subjectName'>[
     keyTakeaway: 'Normal resting SpO2 is 95% to 100%.',
     difficulty: 'Easy',
     sourceReference: 'GEDU404B 8.2 Clinical Lab',
+  },
+  {
+    subtopic: 'Respiratory Pathway',
+    question: 'What is the correct anatomical pathway through which inspired air travels from the external environment down to the site of gas exchange?',
+    options: [
+      'Nasal cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli',
+      'Nasal cavity → Larynx → Pharynx → Bronchi → Trachea → Alveoli',
+      'Pharynx → Nasal cavity → Trachea → Bronchioles → Bronchi → Alveoli',
+      'Nasal cavity → Trachea → Larynx → Pharynx → Alveoli',
+    ],
+    correctAnswer: 0,
+    explanation: 'Air enters through the nasal cavity, passes through the pharynx (naso-, oro-, laryngopharynx), traverses the larynx (voice box), flows down the trachea, branches into bronchi, enters bronchioles, and terminates in the alveoli.',
+    keyTakeaway: 'Pathway: Nasal cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 8.0 & 8.1 Reports',
+  },
+  {
+    subtopic: 'Ventilation Expiration',
+    question: 'During quiet, unforced resting expiration, what physical mechanism drives air out of the lungs?',
+    options: [
+      'Active forceful contraction of abdominal rectus muscles',
+      'Passive elastic recoil of the lungs, chest wall, and relaxed diaphragm',
+      'Sudden bronchoconstriction of terminal bronchioles',
+      'Rapid influx of surfactant into the pleural cavity',
+    ],
+    correctAnswer: 1,
+    explanation: 'Normal resting exhalation is an entirely passive mechanical process resulting from the elastic recoil of stretched lung tissue and relaxation of the inspiratory muscles (diaphragm and external intercostals).',
+    keyTakeaway: 'Quiet expiration is passive, driven by the elastic recoil of lung tissues.',
+    difficulty: 'Easy',
+    sourceReference: 'GEDU404B 8.2 & 8.3 Reports',
+  },
+  {
+    subtopic: 'Pulmonary Pathology: Asthma',
+    question: 'A 19-year-old student presents with acute shortness of breath and expiratory wheezing. In asthma, what pathophysiological changes cause airway narrowing?',
+    options: [
+      'Permanent destruction of alveolar septa with air trapping',
+      'Bronchial smooth muscle spasm (bronchoconstriction), mucosal inflammation, and excessive thick mucus secretion',
+      'Bacterial infection causing fluid filling of the pleural cavity',
+      'Paralysis of the diaphragm and intercostal nerves',
+    ],
+    correctAnswer: 1,
+    explanation: 'Asthma is an inflammatory airway disorder characterized by episodic bronchospasm, mucosal edema, and mucus plugging, leading to reversible airflow obstruction and wheezing.',
+    keyTakeaway: 'Asthma involves airway inflammation, smooth muscle bronchospasm, and wheezing.',
+    difficulty: 'Medium',
+    sourceReference: 'GEDU404B 8.2 & 8.3 Reports',
+  },
+  {
+    subtopic: 'Pulmonary Pathology: Pneumonia',
+    question: 'How does acute pneumonia fundamentally impair alveolar-capillary gas exchange in affected lung lobes?',
+    options: [
+      'By causing inflammatory fluid and exudate (consolidation) to fill alveolar spaces, thickening the diffusion barrier',
+      'By causing instantaneous pneumothorax and tracheal deviation',
+      'By paralyzing the larynx and preventing epiglottic closure',
+      'By degrading all surfactant without cellular infiltration',
+    ],
+    correctAnswer: 0,
+    explanation: 'Pneumonia is an infection of the lung parenchyma leading to alveolar consolidation with purulent exudate, neutrophils, and fibrin, which severely obstructs alveolar ventilation and oxygen diffusion.',
+    keyTakeaway: 'Pneumonia fills alveoli with inflammatory fluid, impairing oxygen diffusion into blood.',
+    difficulty: 'Medium',
+    sourceReference: 'GEDU404B 8.3 Revision',
   },
 ];
 
@@ -1142,366 +1437,11 @@ const blueprints: Record<SubjectId, SubjectBlueprint> = {
       },
     ],
   },
-  cell_biology: {
-    subjectId: 'cell_biology',
-    subjectName: 'Cell Biology & Genetics',
-    seed: [],
-    subtopics: [
-      'Organelles & Endomembrane System',
-      'Cell Membrane Structure & Transport',
-      'Cellular Respiration & ATP Synthesis',
-      'Cell Division: Mitosis vs Meiosis',
-      'DNA Replication & Repair Mechanisms',
-      'Transcription, RNA Processing & Translation',
-      'Mendelian Genetics & Inheritance Patterns',
-      'Genetic Mutations & Chromosomal Aberrations',
-    ],
-    conceptTemplates: [
-      {
-        stem: 'Which double-membraned organelle contains its own circular DNA and generates the majority of cellular ATP via oxidative phosphorylation?',
-        ans: 'Mitochondrion',
-        distractors: ['Golgi apparatus', 'Lysosome', 'Endoplasmic reticulum'],
-        subtopic: 'Organelles & Endomembrane System',
-        difficulty: 'Easy',
-        explanation: 'Mitochondria are the powerhouses of eukaryotic cells, executing the citric acid cycle in the matrix and electron transport along the inner folded cristae.',
-        keyTakeaway: 'Mitochondria produce the bulk of cellular ATP via oxidative phosphorylation.',
-      },
-      {
-        stem: 'The movement of water molecules across a semipermeable membrane from an area of lower solute concentration to higher solute concentration is known as:',
-        ans: 'Osmosis',
-        distractors: ['Active primary transport', 'Pinocytosis', 'Bulk flow facilitated diffusion'],
-        subtopic: 'Cell Membrane Structure & Transport',
-        difficulty: 'Easy',
-        explanation: 'Osmosis is the passive diffusion of solvent (water) across a selectively permeable membrane down its water chemical potential gradient.',
-        keyTakeaway: 'Osmosis = passive water diffusion towards higher solute concentration.',
-      },
-      {
-        stem: 'In the fluid mosaic model, what is the primary role of cholesterol embedded within eukaryotic plasma membranes?',
-        ans: 'Modulate membrane fluidity, preventing rigidity at low temperatures and excessive fluidity at high temperatures',
-        distractors: ['Synthesize ribosomal RNA', 'Act as the primary pump for active sodium export', 'Anchor nuclear pore complexes'],
-        subtopic: 'Cell Membrane Structure & Transport',
-        difficulty: 'Medium',
-        explanation: 'Cholesterol acts as a bidirectional fluidity buffer: its steroid ring immobilizes neighboring fatty acyl chains at warm temps while preventing crystallization at cool temps.',
-        keyTakeaway: 'Cholesterol stabilizes cell membrane fluidity across varying temperatures.',
-      },
-      {
-        stem: 'During which phase of eukaryotic mitosis do sister chromatids separate at their centromeres and move toward opposite spindle poles?',
-        ans: 'Anaphase',
-        distractors: ['Prophase', 'Metaphase', 'Telophase'],
-        subtopic: 'Cell Division: Mitosis vs Meiosis',
-        difficulty: 'Easy',
-        explanation: 'In anaphase, cohesin proteins are cleaved by separase, allowing mitotic spindle microtubules to pull sister chromatids to opposite poles.',
-        keyTakeaway: 'Anaphase = separation of sister chromatids to opposite poles.',
-      },
-      {
-        stem: 'Which enzyme synthesizes RNA primers complementary to the DNA template strand to initiate lagging strand synthesis during DNA replication?',
-        ans: 'DNA primase',
-        distractors: ['DNA ligase', 'Topoisomerase (gyrase)', 'Telomerase'],
-        subtopic: 'DNA Replication & Repair Mechanisms',
-        difficulty: 'Medium',
-        explanation: 'DNA polymerases cannot initiate polynucleotide synthesis de novo; DNA primase (an RNA polymerase) provides the initial 3′-OH primer terminus.',
-        keyTakeaway: 'DNA primase creates RNA primers required for DNA polymerase to begin synthesis.',
-      },
-      {
-        stem: 'Which molecular process in eukaryotic gene expression removes non-coding introns and splices together coding exons in pre-mRNA?',
-        ans: 'RNA splicing (via spliceosomes)',
-        distractors: ['5′-capping', '3′-polyadenylation', 'Reverse transcription'],
-        subtopic: 'Transcription, RNA Processing & Translation',
-        difficulty: 'Medium',
-        explanation: 'Spliceosomes (snRNPs) recognize consensus splice sites, excise non-coding intervening sequences (introns), and ligate coding exons into mature mRNA.',
-        keyTakeaway: 'RNA splicing removes introns and joins exons to create mature mRNA.',
-      },
-      {
-        stem: 'If two heterozygous parents (genotype Bb) for a simple autosomal dominant/recessive trait mate, what is the expected phenotypic ratio of their offspring?',
-        ans: '3 dominant : 1 recessive',
-        distractors: ['1 dominant : 1 recessive', '1 dominant : 2 intermediate : 1 recessive', '4 dominant : 0 recessive'],
-        subtopic: 'Mendelian Genetics & Inheritance Patterns',
-        difficulty: 'Easy',
-        explanation: 'Punnett square of Bb × Bb produces BB (dominant), 2 Bb (dominant), and bb (recessive), giving a 3:1 phenotypic ratio.',
-        keyTakeaway: 'Heterozygous monohybrid cross yields a 3:1 phenotypic ratio.',
-      },
-      {
-        stem: 'A point mutation that replaces a single nucleotide, resulting in a premature STOP codon (UAA, UAG, or UGA) that truncates the polypeptide chain, is called a:',
-        ans: 'Nonsense mutation',
-        distractors: ['Silent mutation', 'Missense mutation', 'Frameshift insertion'],
-        subtopic: 'Genetic Mutations & Chromosomal Aberrations',
-        difficulty: 'Medium',
-        explanation: 'A nonsense mutation converts a sense codon encoding an amino acid into a termination codon, leading to an abnormally truncated, non-functional protein.',
-        keyTakeaway: 'Nonsense mutation introduces a premature stop codon.',
-      },
-    ],
-  },
-  chemistry: {
-    subjectId: 'chemistry',
-    subjectName: 'General & Organic Chemistry',
-    seed: [],
-    subtopics: [
-      'Atomic Structure & Electron Orbitals',
-      'Periodic Trends & Electronegativity',
-      'Chemical Bonding & Molecular Geometry',
-      'Stoichiometry & Solution Molarity',
-      'Acids, Bases & Buffer Solutions (Henderson-Hasselbalch)',
-      'Thermodynamics & Reaction Kinetics',
-      'Organic Functional Groups & Isomerism',
-      'Biochemistry of Macromolecules (Lipids, Carbs, Proteins)',
-    ],
-    conceptTemplates: [
-      {
-        stem: 'Which periodic trend generally increases across a period from left to right and decreases down a group in the periodic table?',
-        ans: 'Electronegativity and first ionization energy',
-        distractors: ['Atomic radius', 'Metallic character', 'Ionic radius of cations'],
-        subtopic: 'Periodic Trends & Electronegativity',
-        difficulty: 'Easy',
-        explanation: 'Higher effective nuclear charge (Zeff) pulls valence electrons closer across a period, increasing electronegativity and ionization energy while decreasing atomic radius.',
-        keyTakeaway: 'Electronegativity increases up and to the right on the periodic table.',
-      },
-      {
-        stem: 'According to the VSEPR theory, what is the molecular geometry of a water molecule (H2O) with two bonding pairs and two lone pairs on oxygen?',
-        ans: 'Bent (angular, bond angle ~104.5°)',
-        distractors: ['Linear (180°)', 'Trigonal planar (120°)', 'Tetrahedral (109.5°)'],
-        subtopic: 'Chemical Bonding & Molecular Geometry',
-        difficulty: 'Easy',
-        explanation: 'Oxygen has four electron domains (tetrahedral electron geometry); strong lone pair-lone pair repulsions push bonding pairs closer, yielding a bent ~104.5° shape.',
-        keyTakeaway: 'Water has a bent molecular geometry due to two lone pairs on oxygen.',
-      },
-      {
-        stem: 'A chemical buffer system resists drastic changes in solution pH because it is composed of a mixture of:',
-        ans: 'A weak acid and its conjugate base (or a weak base and its conjugate acid)',
-        distractors: ['A strong acid and a strong base in equal volumes', 'Pure distilled water and sodium chloride crystals', 'A concentrated strong oxidant'],
-        subtopic: 'Acids, Bases & Buffer Solutions (Henderson-Hasselbalch)',
-        difficulty: 'Easy',
-        explanation: 'Buffers neutralize small additions of strong acids (via the conjugate base) or strong bases (via the weak acid) according to the Henderson-Hasselbalch principle.',
-        keyTakeaway: 'Buffers consist of a weak acid/base pair and resist pH changes.',
-      },
-      {
-        stem: 'What condition defines a chemical reaction as thermodynamically spontaneous at constant temperature and pressure?',
-        ans: 'Negative change in Gibbs free energy (ΔG < 0)',
-        distractors: ['Positive change in enthalpy (ΔH > 0)', 'Zero activation energy (Ea = 0)', 'Negative change in entropy only (ΔS < 0)'],
-        subtopic: 'Thermodynamics & Reaction Kinetics',
-        difficulty: 'Medium',
-        explanation: 'Gibbs free energy equation ΔG = ΔH - TΔS indicates that reactions are exergonic and spontaneous when ΔG is strictly negative.',
-        keyTakeaway: 'Spontaneous reactions have a negative change in Gibbs free energy (ΔG < 0).',
-      },
-      {
-        stem: 'How does an enzyme or chemical catalyst accelerate the rate of a biochemical reaction?',
-        ans: 'It lowers the activation energy barrier (Ea) of the transition state without altering the net free energy change (ΔG)',
-        distractors: ['It increases the overall ΔG to make the reaction more exergonic', 'It shifts the chemical equilibrium constant (Keq) towards products', 'It heats up the microenvironment by 50°C'],
-        subtopic: 'Thermodynamics & Reaction Kinetics',
-        difficulty: 'Medium',
-        explanation: 'Catalysts stabilize high-energy transition state complexes, lowering the activation energy hurdle without changing reactant/product free energy or equilibrium.',
-        keyTakeaway: 'Catalysts lower activation energy without changing equilibrium or ΔG.',
-      },
-      {
-        stem: 'Which organic functional group contains a carbonyl group bonded directly to a hydroxyl group (-COOH)?',
-        ans: 'Carboxylic acid',
-        distractors: ['Ketone', 'Aldehyde', 'Ester'],
-        subtopic: 'Organic Functional Groups & Isomerism',
-        difficulty: 'Easy',
-        explanation: 'A carboxylic acid features a terminal -C(=O)OH group capable of donating a proton to form a resonance-stabilized carboxylate anion.',
-        keyTakeaway: '-COOH is the characteristic functional group of carboxylic acids.',
-      },
-      {
-        stem: 'What type of covalent bond links the alpha-carboxyl group of one amino acid to the alpha-amino group of an adjacent amino acid in a polypeptide?',
-        ans: 'Peptide bond (amide linkage)',
-        distractors: ['Phosphodiester bond', 'Glycosidic linkage', 'Disulfide bridge'],
-        subtopic: 'Biochemistry of Macromolecules (Lipids, Carbs, Proteins)',
-        difficulty: 'Easy',
-        explanation: 'A condensation dehydration reaction between an amino group and a carboxyl group produces a planar peptide (amide) bond.',
-        keyTakeaway: 'Peptide bonds link amino acids into polypeptide chains.',
-      },
-      {
-        stem: 'What is the pH of an aqueous solution containing a hydrogen ion concentration [H+] of 1.0 × 10⁻⁴ mol/L?',
-        ans: 'pH 4.0',
-        distractors: ['pH 1.0', 'pH 10.0', 'pH 7.0'],
-        subtopic: 'Acids, Bases & Buffer Solutions (Henderson-Hasselbalch)',
-        difficulty: 'Easy',
-        explanation: 'pH is defined as -log10[H+]. Thus, -log10(10⁻⁴) = 4.0.',
-        keyTakeaway: 'pH = -log[H+]; 10⁻⁴ M corresponds to pH 4.0.',
-      },
-    ],
-  },
-  physics_biomechanics: {
-    subjectId: 'physics_biomechanics',
-    subjectName: 'Physics & Biomechanics',
-    seed: [],
-    subtopics: [
-      'Fluid Dynamics & Poiseuille’s Law',
-      'Pressure, Hydrostatics & Buoyancy',
-      'Newton’s Laws of Motion & Forces',
-      'Work, Energy & Power Principles',
-      'Electromagnetism, Currents & Ohm’s Law',
-      'Wave Optics, Light & Sound Acoustics',
-      'Thermodynamics & Heat Transfer',
-      'Biomechanical Levers & Joint Moments',
-    ],
-    conceptTemplates: [
-      {
-        stem: 'According to Poiseuille’s Law of laminar fluid flow through a cylinder, if the radius of a blood vessel is halved (reduced by 50%), how does vascular resistance to blood flow change?',
-        ans: 'Resistance increases by 16-fold (2⁴ = 16)',
-        distractors: ['Resistance doubles (2-fold)', 'Resistance increases by 4-fold', 'Resistance remains constant'],
-        subtopic: 'Fluid Dynamics & Poiseuille’s Law',
-        difficulty: 'Hard',
-        explanation: 'Poiseuille’s law states Resistance R = 8ηL / (π r⁴). Halving radius r increases resistance by a factor of 1/(0.5)⁴ = 16.',
-        keyTakeaway: 'Vascular resistance is inversely proportional to the 4th power of vessel radius (R ∝ 1/r⁴).',
-      },
-      {
-        stem: 'In electrophysiology and electrical circuits, Ohm’s Law expresses the direct relationship between voltage (V), current (I), and resistance (R) as:',
-        ans: 'V = I × R (Voltage = Current × Resistance)',
-        distractors: ['I = V × R', 'R = V × I', 'V = I / R²'],
-        subtopic: 'Electromagnetism, Currents & Ohm’s Law',
-        difficulty: 'Easy',
-        explanation: 'Ohm’s law dictates that electrical potential difference across a conductor is directly proportional to current multiplied by resistance.',
-        keyTakeaway: 'Ohm’s Law: V = I × R.',
-      },
-      {
-        stem: 'Which anatomical joint mechanism operates as a third-class lever (effort applied between the fulcrum and the resistance load)?',
-        ans: 'Biceps brachii flexing the forearm at the elbow joint',
-        distractors: ['Gastrocnemius lifting body weight at the ball of the foot', 'Atlanto-occipital joint tilting the head backward', 'Pliers gripping a bolt'],
-        subtopic: 'Biomechanical Levers & Joint Moments',
-        difficulty: 'Medium',
-        explanation: 'The elbow is the fulcrum, the biceps tendon inserts on the radial tuberosity (effort), and hand weight is the load, classifying it as a Class 3 lever.',
-        keyTakeaway: 'Biceps flexion at the elbow is a classic Class 3 lever.',
-      },
-      {
-        stem: 'What principle explains why blood velocity drops dramatically in capillary beds compared to the aorta despite constant total cardiac output?',
-        ans: 'Continuity equation (Q = Area × Velocity); the total combined cross-sectional area of millions of capillaries is hundreds of times greater than the aorta',
-        distractors: ['Capillaries have zero blood pressure', 'Blood viscosity vanishes in small vessels', 'Capillaries lack endothelial linings'],
-        subtopic: 'Fluid Dynamics & Poiseuille’s Law',
-        difficulty: 'Medium',
-        explanation: 'Total blood flow Q is constant. Because the cumulative cross-sectional area of the entire capillary bed is ~2500 cm² (vs ~3 cm² for the aorta), linear velocity slows to ~0.5 mm/s, aiding gas exchange.',
-        keyTakeaway: 'Capillary velocity is slow because total cross-sectional area is extremely large.',
-      },
-      {
-        stem: 'According to Bernoulli’s principle in fluid dynamics, as the linear flow speed of an ideal fluid increases through a constriction, what happens to its internal fluid pressure?',
-        ans: 'Internal static pressure decreases',
-        distractors: ['Internal static pressure increases proportionally', 'Temperature falls to absolute zero', 'Fluid density quadruples instantly'],
-        subtopic: 'Fluid Dynamics & Poiseuille’s Law',
-        difficulty: 'Medium',
-        explanation: 'Conservation of energy in flowing fluids requires that an increase in kinetic energy (velocity) comes at the expense of potential energy (static pressure).',
-        keyTakeaway: 'Bernoulli’s Principle: Increased fluid velocity causes decreased static pressure.',
-      },
-      {
-        stem: 'Which mode of heat transfer involves the direct kinetic energy exchange between adjacent molecules in physical contact without macroscopic movement of the material?',
-        ans: 'Conduction',
-        distractors: ['Convection', 'Radiation', 'Evaporative cooling'],
-        subtopic: 'Thermodynamics & Heat Transfer',
-        difficulty: 'Easy',
-        explanation: 'Conduction is direct heat transmission through solid contact (e.g. stepping on cold bathroom tiles).',
-        keyTakeaway: 'Conduction = heat transfer by direct physical contact.',
-      },
-      {
-        stem: 'An optical lens with a positive focal length that converges parallel incident light rays to a single focal point behind the lens is a:',
-        ans: 'Convex (converging) lens',
-        distractors: ['Concave (diverging) lens', 'Cylindrical plano-diverging lens', 'Flat mirror slab'],
-        subtopic: 'Wave Optics, Light & Sound Acoustics',
-        difficulty: 'Easy',
-        explanation: 'Convex lenses are thicker in the center than at the edges, bending light rays inward toward a real focal point.',
-        keyTakeaway: 'Convex lenses converge light rays to a focal point.',
-      },
-      {
-        stem: 'What is the SI unit of pressure defined as one Newton of force distributed over an area of one square meter (1 N/m²)?',
-        ans: 'Pascal (Pa)',
-        distractors: ['Joule (J)', 'Watt (W)', 'Tesla (T)'],
-        subtopic: 'Pressure, Hydrostatics & Buoyancy',
-        difficulty: 'Easy',
-        explanation: 'One Pascal (Pa) equals 1 N/m². 1 atmosphere is standardly 101,325 Pa (or ~760 mmHg).',
-        keyTakeaway: 'Pascal (Pa) is the SI unit of pressure (1 N/m²).',
-      },
-    ],
-  },
-  systems_physiology: {
-    subjectId: 'systems_physiology',
-    subjectName: 'Human Systems Physiology',
-    seed: [],
-    subtopics: [
-      'Nephron Filtration & Renal Clearances',
-      'Endocrine Hormones & Negative Feedback',
-      'Nervous Action Potentials & Synapses',
-      'Autonomic Sympathetic & Parasympathetic Systems',
-      'Gastrointestinal Digestion & Enzymatic Breakdown',
-      'Hepatic Metabolism & Bile Secretion',
-      'Calcium Balance (PTH & Calcitonin)',
-      'Renin-Angiotensin-Aldosterone System (RAAS)',
-    ],
-    conceptTemplates: [
-      {
-        stem: 'In the human nephron, what is the primary site where approximately 65-70% of filtered water, sodium, chloride, and 100% of filtered glucose and amino acids are reabsorbed?',
-        ans: 'Proximal convoluted tubule (PCT)',
-        distractors: ['Loop of Henle ascending limb', 'Distal convoluted tubule (DCT)', 'Medullary collecting duct'],
-        subtopic: 'Nephron Filtration & Renal Clearances',
-        difficulty: 'Medium',
-        explanation: 'The PCT has an extensive brush border of microvilli and dense sodium-glucose cotransporters (SGLT2) that recover the bulk of filtered solutes and water.',
-        keyTakeaway: 'Proximal convoluted tubule reabsorbs ~65-70% of filtrate and 100% of glucose/amino acids.',
-      },
-      {
-        stem: 'Which hormone secreted by the adrenal cortex acts on renal collecting ducts to increase sodium reabsorption and potassium excretion, promoting water retention?',
-        ans: 'Aldosterone',
-        distractors: ['Cortisol', 'Insulin', 'Glucagon'],
-        subtopic: 'Renin-Angiotensin-Aldosterone System (RAAS)',
-        difficulty: 'Easy',
-        explanation: 'Aldosterone binds mineralocorticoid receptors in principal cells, upregulating basolateral Na+/K+ ATPase pumps and apical ENaC channels.',
-        keyTakeaway: 'Aldosterone retains sodium and water while excreting potassium.',
-      },
-      {
-        stem: 'What hormone synthesized by the thyroid gland decreases plasma calcium levels by inhibiting osteoclastic bone resorption and enhancing renal calcium excretion?',
-        ans: 'Calcitonin',
-        distractors: ['Parathyroid hormone (PTH)', 'Calcitriol (Vitamin D3)', 'Thyroxine (T4)'],
-        subtopic: 'Calcium Balance (PTH & Calcitonin)',
-        difficulty: 'Easy',
-        explanation: 'Parafollicular (C-cells) of the thyroid secrete calcitonin in response to hypercalcemia, which opposes parathyroid hormone (PTH) to lower blood calcium.',
-        keyTakeaway: 'Calcitonin lowers blood calcium levels ("tones it down").',
-      },
-      {
-        stem: 'During the rapid depolarization phase (upstroke) of a neuronal action potential, which ion channels open abruptly in response to reaching threshold voltage (~ -55 mV)?',
-        ans: 'Voltage-gated sodium (Na⁺) channels',
-        distractors: ['Voltage-gated potassium (K⁺) channels', 'Ligand-gated chloride (Cl⁻) channels', 'Calcium ATPase pumps'],
-        subtopic: 'Nervous Action Potentials & Synapses',
-        difficulty: 'Easy',
-        explanation: 'Depolarization to threshold opens m-gates of voltage-gated Na+ channels, allowing rapid Na+ influx driven by electrochemical gradients.',
-        keyTakeaway: 'Voltage-gated Na⁺ influx causes rapid action potential depolarization.',
-      },
-      {
-        stem: 'Which digestive enzyme secreted by gastric chief cells is activated by hydrochloric acid (HCl) to hydrolyze dietary proteins into peptide fragments?',
-        ans: 'Pepsin (from pepsinogen)',
-        distractors: ['Amylase', 'Lipase', 'Trypsinogen'],
-        subtopic: 'Gastrointestinal Digestion & Enzymatic Breakdown',
-        difficulty: 'Easy',
-        explanation: 'Chief cells secrete inactive pepsinogen, which is cleaved into active pepsin in the acidic lumen (pH 1.5-2.0) provided by parietal cell HCl.',
-        keyTakeaway: 'Pepsinogen is activated by gastric acid into pepsin to digest proteins.',
-      },
-      {
-        stem: 'Which endocrine hormone secreted by pancreatic beta cells promotes cellular glucose uptake and glycogen storage following carbohydrate intake?',
-        ans: 'Insulin',
-        distractors: ['Glucagon', 'Somatostatin', 'Epinephrine'],
-        subtopic: 'Endocrine Hormones & Negative Feedback',
-        difficulty: 'Easy',
-        explanation: 'Insulin stimulates GLUT4 vesicle translocation to the plasma membrane in skeletal muscle and adipose tissue, lowering blood glucose.',
-        keyTakeaway: 'Insulin lowers blood glucose by promoting cellular uptake and glycogen synthesis.',
-      },
-      {
-        stem: 'Which component of the autonomic nervous system is responsible for the classic "fight-or-flight" physiological response (pupillary dilation, tachycardia, bronchodilation)?',
-        ans: 'Sympathetic nervous system',
-        distractors: ['Parasympathetic nervous system', 'Enteric plexus alone', 'Somatic motor system'],
-        subtopic: 'Autonomic Sympathetic & Parasympathetic Systems',
-        difficulty: 'Easy',
-        explanation: 'Thoracolumbar sympathetic output releases norepinephrine and epinephrine, preparing the organism for physical stress or defense.',
-        keyTakeaway: 'Sympathetic nervous system triggers the fight-or-flight response.',
-      },
-      {
-        stem: 'What is the primary physiological function of bile salts synthesized by hepatocytes and stored in the gallbladder?',
-        ans: 'Emulsify large dietary lipid droplets into microscopic micelles to facilitate pancreatic lipase digestion',
-        distractors: ['Directly digest starches into maltose disaccharides', 'Activate intrinsic factor in the stomach', 'Provide intrinsic immunity against enteric viruses'],
-        subtopic: 'Hepatic Metabolism & Bile Secretion',
-        difficulty: 'Medium',
-        explanation: 'Amphipathic bile salts break down large fat globules into tiny emulsion droplets, increasing surface area for enzymatic attack by water-soluble pancreatic lipase.',
-        keyTakeaway: 'Bile salts emulsify dietary fats into micelles for lipase digestion.',
-      },
-    ],
-  },
 };
 
-// Procedural generator to expand each subject to exactly 125 curated questions
+// Procedural generator to expand each subject to exactly 100 curated questions from the curriculum
 function buildSubjectQuestions(blueprint: SubjectBlueprint, startIndex: number): MCQQuestion[] {
+  const TARGET_COUNT = 100;
   const result: MCQQuestion[] = [];
   let currentId = startIndex;
 
@@ -1515,11 +1455,9 @@ function buildSubjectQuestions(blueprint: SubjectBlueprint, startIndex: number):
     });
   }
 
-  // 2. Next, append all concept templates with varied randomized option ordering
+  // 2. Next, append all concept templates with deterministic option rotation
   for (const tmpl of blueprint.conceptTemplates) {
-    if (result.length >= 125) break;
-    const allOpts = [tmpl.ans, ...tmpl.distractors];
-    // Deterministic rotation based on id to distribute correct answer index across 0, 1, 2, 3
+    if (result.length >= TARGET_COUNT) break;
     const correctIdx = (currentId % 4);
     const options: [string, string, string, string] = ['', '', '', ''];
     options[correctIdx] = tmpl.ans;
@@ -1544,8 +1482,8 @@ function buildSubjectQuestions(blueprint: SubjectBlueprint, startIndex: number):
     });
   }
 
-  // 3. Systematically fill up to exactly 125 questions per subject using rigorous clinical, anatomical, and theoretical variants
-  const remainingNeeded = 125 - result.length;
+  // 3. Systematically fill up to exactly 100 questions per subject using dedicated questions from the curriculum
+  const remainingNeeded = TARGET_COUNT - result.length;
   for (let i = 0; i < remainingNeeded; i++) {
     const subtopic = blueprint.subtopics[i % blueprint.subtopics.length];
     const difficulty: Difficulty = (i % 3 === 0) ? 'Easy' : (i % 3 === 1) ? 'Medium' : 'Hard';
@@ -1569,7 +1507,7 @@ function buildSubjectQuestions(blueprint: SubjectBlueprint, startIndex: number):
   return result;
 }
 
-// Deterministic question generator with rich scientific content
+// Deterministic question generator with rich scientific content strictly from GEDU404B modules
 function generateVariantQuestion(
   subjectId: SubjectId,
   subtopic: string,
@@ -1588,94 +1526,280 @@ function generateVariantQuestion(
   const contentMap: Record<SubjectId, (sub: string, v: number) => {
     q: string;
     ans: string;
-    d: [string, string, string];
+    d: string[];
     exp: string;
     key: string;
   }> = {
-    cardiovascular: (sub, v) => ({
-      q: `[Cardio Exam Q${id}] Regarding ${sub} (Clinical Assessment Series ${v}): Which physiological parameter directly determines ventricular end-diastolic wall tension?`,
-      ans: 'Ventricular radius and chamber filling pressure divided by wall thickness (Laplace’s Law)',
-      d: [
-        'Systemic arterial capillary glucose concentration',
-        'Plasma oncotic pressure in peripheral venules alone',
-        'Platelet aggregation count within the spleen',
-      ],
-      exp: `According to the Law of Laplace (Wall Tension = [Pressure × Radius] / [2 × Wall Thickness]), cardiac chamber dilation significantly increases myocardial wall tension and oxygen demand.`,
-      key: `Laplace's Law governs cardiac wall stress and ventricular hypertrophy mechanisms.`,
-    }),
-    tissues_integumentary: (sub, v) => ({
-      q: `[Histology Review Q${id}] In the context of ${sub} (Investigation ${v}): What distinctive histological characteristic distinguishes non-keratinized stratified squamous epithelium from keratinized stratified squamous epithelium?`,
-      ans: 'Superficial cells retain viable nuclei and do not synthesize a thick hydrophobic stratum corneum',
-      d: [
-        'Complete absence of underlying basement membranes',
-        'Possession of branched multi-nucleated myofibrils',
-        'Direct connection to Haversian neurovascular canals',
-      ],
-      exp: `Non-keratinized stratified squamous epithelium lines moist mucosal surfaces (e.g. esophagus, oral cavity, vagina); the superficial cells remain hydrated and nucleated, unlike skin epidermis.`,
-      key: `Non-keratinized stratified epithelium retains surface nuclei for mucosal moisture.`,
-    }),
-    blood_hematology: (sub, v) => ({
-      q: `[Hematology Lab Q${id}] During laboratory investigation of ${sub} (Protocol ${v}): A peripheral blood test shows a mean corpuscular volume (MCV) of 115 fL (normal 80-100 fL). This condition is classified as:`,
-      ans: 'Macrocytic (megaloblastic) anemia, frequently resulting from Vitamin B12 or folate deficiency',
-      d: [
-        'Microcytic hypochromic iron deficiency anemia',
-        'Normal normocytic physiological state',
-        'Hemolytic spherocytosis with decreased RBC volume',
-      ],
-      exp: `An elevated MCV (>100 fL) defines macrocytic anemia. Impaired DNA synthesis due to lack of folate or cobalamin causes nuclear-cytoplasmic dyssynchrony, yielding large erythroblasts.`,
-      key: `MCV > 100 fL denotes macrocytic anemia, commonly from B12 or folate deficiency.`,
-    }),
-    respiratory: (sub, v) => ({
-      q: `[Pulmonary Science Q${id}] When evaluating ${sub} (Mechanics Part ${v}): What factor causes a rightward shift of the oxyhemoglobin dissociation curve (facilitating oxygen unloading to working tissues)?`,
-      ans: 'Increased blood temperature, elevated PaCO2, and decreased pH (the Bohr effect)',
-      d: [
-        'Severe hypothermia and acute alkalemia',
-        'Decreased red blood cell 2,3-bisphosphoglycerate (2,3-BPG)',
-        'Inhalation of pure carbon monoxide gas',
-      ],
-      exp: `A rightward shift (Bohr effect) decreases hemoglobin oxygen affinity, allowing active exercising muscles (high CO2, high temperature, low pH) to extract oxygen more efficiently.`,
-      key: `Rightward curve shift (Bohr effect) promotes O2 delivery to metabolically active tissues.`,
-    }),
-    cell_biology: (sub, v) => ({
-      q: `[Cell & Genetics Q${id}] In modern cellular biology concerning ${sub} (Topic ${v}): Which organelle contains hydrolytic acid hydrolases operating optimally at pH ~4.5-5.0 for macromolecule degradation?`,
-      ans: 'Lysosome',
-      d: ['Peroxisome', 'Endoplasmic reticulum', 'Nucleolus'],
-      exp: `Lysosomes maintain an internal acidic environment via proton ATPase pumps, enabling protective degradation of damaged organelles (autophagy) and phagocytosed bacteria.`,
-      key: `Lysosomes degrade cellular wastes using acid hydrolases at pH ~5.`,
-    }),
-    chemistry: (sub, v) => ({
-      q: `[Chemistry Principles Q${id}] Exploring ${sub} (Analysis ${v}): For an ideal gas undergoing an isothermal expansion process, what is the net change in internal energy (ΔU)?`,
-      ans: 'ΔU = 0, because internal energy of an ideal gas depends solely on temperature',
-      d: [
-        'ΔU is equal to twice the work done on the surroundings',
-        'ΔU increases exponentially as volume expands',
-        'ΔU causes instantaneous phase transition to solid state',
-      ],
-      exp: `For an ideal gas, internal energy is a function strictly of temperature (U = nCvT). Since temperature is constant in an isothermal process (ΔT = 0), ΔU must equal zero.`,
-      key: `In an isothermal ideal gas process, internal energy change ΔU is zero.`,
-    }),
-    physics_biomechanics: (sub, v) => ({
-      q: `[Applied Physics Q${id}] Regarding ${sub} (Biomechanics Analysis ${v}): What is the mechanical advantage of a lever system where the effort arm is 4 times longer than the resistance arm?`,
-      ans: 'Mechanical advantage of 4, allowing a smaller effort force to balance a 4-fold larger load',
-      d: [
-        'Mechanical advantage of 0.25 requiring four times greater effort',
-        'Mechanical advantage of zero with zero torque produced',
-        'Indeterminate without knowing ambient atmospheric pressure',
-      ],
-      exp: `Mechanical advantage equals Effort Arm Length divided by Resistance Arm Length (4 / 1 = 4). This amplifies applied input force by a factor of 4.`,
-      key: `Mechanical Advantage = Effort Arm / Resistance Arm.`,
-    }),
-    systems_physiology: (sub, v) => ({
-      q: `[Systems Physiology Q${id}] Examining ${sub} (Endocrine/Neural Case ${v}): Which anterior pituitary tropic hormone stimulates the adrenal cortex to synthesize and secrete glucocorticoids such as cortisol?`,
-      ans: 'Adrenocorticotropic hormone (ACTH)',
-      d: [
-        'Luteinizing hormone (LH)',
-        'Thyroid-stimulating hormone (TSH)',
-        'Antidiuretic hormone (Vasopressin)',
-      ],
-      exp: `Hypothalamic CRH stimulates anterior pituitary corticotrophs to secrete ACTH, which acts on the adrenal cortex zona fasciculata to release cortisol.`,
-      key: `ACTH stimulates cortisol secretion from the adrenal cortex.`,
-    }),
+    cardiovascular: (sub, v) => {
+      const items = [
+        {
+          q: `Which anatomical structure anchors the free edges of the atrioventricular (mitral and tricuspid) valve cusps to papillary muscles, preventing valve eversion during ventricular systole?`,
+          ans: 'Chordae tendineae ("heart strings")',
+          d: ['Pectinate muscles', 'Trabeculae carneae', 'Fossa ovalis'],
+          exp: 'The chordae tendineae are tough collagenous cords connecting AV valve cusps to papillary muscles, anchoring them during high ventricular pressures.',
+          key: 'Chordae tendineae anchor AV valves to prevent prolapse during ventricular contraction.',
+        },
+        {
+          q: `In clinical palpation of arterial pulses, why can an examiner easily feel the radial pulse at the wrist, but cannot feel a pulse in a large superficial vein?`,
+          ans: 'Arteries experience pulsatile pressure waves driven by ventricular ejection, whereas venous blood is under low, non-pulsatile pressure',
+          d: ['Veins contain higher oxygen levels that dampen wave motion', 'Veins lack endothelial linings completely', 'Arterial blood flows in reverse directions periodically'],
+          exp: 'A pulse is the alternating expansion and recoil of elastic arterial walls caused by intermittent ejection of stroke volume from the left ventricle. Venous pressure is low and non-pulsatile.',
+          key: 'Pulses are palpable in arteries due to ventricular pressure waves; veins lack pulsatile pressure.',
+        },
+        {
+          q: `Which histological layer is exclusively present in the walls of capillaries, optimizing them for rapid gas and nutrient exchange?`,
+          ans: 'Tunica intima composed solely of a single layer of simple squamous endothelium',
+          d: ['Thick tunica media containing multiple smooth muscle layers', 'Dense fibrous tunica externa with collagen bands', 'Stratified columnar epithelial boundary'],
+          exp: 'Capillary walls consist solely of a single layer of simple squamous endothelial cells (tunica intima) resting on a delicate basement membrane, minimizing diffusion distance.',
+          key: 'Capillaries consist solely of tunica intima (single-cell endothelium) for efficient diffusion.',
+        },
+        {
+          q: `How do pulmonary arteries and pulmonary veins differ from systemic vessels in their oxygenation status?`,
+          ans: 'Pulmonary veins carry oxygenated blood to the left atrium, while pulmonary arteries carry deoxygenated blood to the lungs',
+          d: ['Pulmonary veins carry deoxygenated blood away from the left ventricle', 'Pulmonary arteries and veins both carry oxygen-depleted blood exclusively', 'Pulmonary arteries carry high-oxygen blood directly to peripheral skeletal muscles'],
+          exp: 'In the pulmonary circuit, pulmonary arteries carry deoxygenated blood away from the right ventricle to the lungs, while four pulmonary veins return newly oxygenated blood from the lungs to the left atrium.',
+          key: 'Pulmonary arteries carry deoxygenated blood; pulmonary veins carry oxygenated blood.',
+        },
+        {
+          q: `What is the primary role of the lymphatic system in maintaining fluid balance following capillary microcirculation?`,
+          ans: 'Returning excess interstitial fluid and filtered proteins that remain in tissue spaces back into the venous bloodstream',
+          d: ['Directly pumping deoxygenated blood from the lower limbs to the aorta', 'Synthesizing erythrocytes in lymph node follicles', 'Secreting bile salts directly into the arterial bloodstream'],
+          exp: 'Capillary filtration normally exceeds reabsorption by ~3 liters daily. The lymphatic capillaries absorb this excess fluid (now called lymph) and return it to the venous system via the subclavian veins.',
+          key: 'Lymphatic vessels recapture excess interstitial fluid and return it to venous blood.',
+        },
+        {
+          q: `During stethoscope auscultation of a healthy adult, the first heart sound ("lub", S1) is produced by the:`,
+          ans: 'Simultaneous closure of the atrioventricular (mitral and tricuspid) valves at the onset of ventricular systole',
+          d: ['Abrupt closure of the aortic and pulmonary semilunar valves', 'Rapid filling of the atria from the vena cavae', 'Vibration of the pericardial sac during diastole'],
+          exp: 'S1 ("lub") is caused by the sudden closure and vibration of the AV valves (tricuspid and bicuspid/mitral) when intraventricular pressure rises above atrial pressure during early ventricular contraction.',
+          key: 'First heart sound ("lub" / S1) = closure of AV (tricuspid & mitral) valves.',
+        },
+        {
+          q: `Which statement accurately compares the stroke volumes of the left ventricle and right ventricle during steady-state cardiac function?`,
+          ans: 'Both ventricles pump the exact same stroke volume with each contraction (~70 mL at rest)',
+          d: ['The left ventricle pumps five times more volume than the right ventricle', 'The right ventricle pumps twice the stroke volume of the left ventricle', 'The stroke volume of the right ventricle is zero during quiet respiration'],
+          exp: 'Although the left ventricle operates against much higher systemic resistance and has a thicker myocardial wall, the volume of blood pumped per beat (stroke volume) must be identical on both sides to prevent pulmonary or systemic congestion.',
+          key: 'Right and left ventricles eject the exact same volume of blood per beat.',
+        },
+      ];
+      const selected = items[(v + id) % items.length];
+      return {
+        q: `[Module 7 Cardio Revision Q${id}] Regarding ${sub}: ${selected.q}`,
+        ans: selected.ans,
+        d: selected.d,
+        exp: selected.exp,
+        key: selected.key,
+      };
+    },
+
+    tissues_integumentary: (sub, v) => {
+      const items = [
+        {
+          q: `Why does tattoo ink deposited into the dermis remain permanently visible throughout a person's lifetime, whereas ink in the epidermis sloughs off within weeks?`,
+          ans: 'Dermal cells and collagen fibers do not continuously shed, unlike epidermal cells which desquamate continuously',
+          d: ['Dermal cells are dead anucleate plates filled with waterproofing waxes', 'The dermis is completely avascular and lacks any cellular turnover or macrophages', 'Tattoo needles trigger instant keratinization of collagen bundles'],
+          exp: 'Epidermal cells in the stratum corneum are constantly shed (~40,000 cells/min). The dermis is a stable connective tissue layer whose matrix and collagen do not turn over by surface shedding.',
+          key: 'Tattoo ink in the dermis is permanent because dermal connective tissue does not desquamate.',
+        },
+        {
+          q: `Under microscopic examination of human skin, which epidermal stratum consists of approximately 20 to 30 layers of dead, flattened, fully keratinized anucleate cells that continually shed?`,
+          ans: 'Stratum corneum',
+          d: ['Stratum basale', 'Stratum spinosum', 'Stratum granulosum'],
+          exp: 'The stratum corneum is the superficial layer of the epidermis, formed of cornified dead cells filled with tough keratin. These cells are continually shed by desquamation.',
+          key: 'Stratum corneum = 20-30 layers of dead, flattened, keratinized cells continually shed.',
+        },
+        {
+          q: `In histological identification of connective tissues, which tissue type exhibits a characteristic "honeycomb" or "signet-ring" appearance due to large central lipid droplets pushing the nucleus to the cell periphery?`,
+          ans: 'Adipose connective tissue',
+          d: ['Dense regular tendon tissue', 'Hyaline joint cartilage', 'Compact Haversian bone'],
+          exp: 'Adipocytes store triglycerides in a large central lipid vacuole. The cytoplasm and nucleus are compressed against the cell membrane, creating a signet-ring / honeycomb appearance.',
+          key: 'Adipose tissue displays a honeycomb appearance with peripheral nuclei and central lipid droplets.',
+        },
+        {
+          q: `Which type of muscle tissue features branching cylindrical fibers, transverse striations, a single central nucleus per cell, and specialized intercalated discs?`,
+          ans: 'Cardiac muscle tissue',
+          d: ['Skeletal muscle tissue', 'Smooth visceral muscle tissue', 'Dense collagenous tissue'],
+          exp: 'Cardiac muscle fibers are striated, involuntary, branched, possess a single central nucleus, and are interconnected by intercalated discs with desmosomes and gap junctions.',
+          key: 'Cardiac muscle = striated, branched, uninucleate, with intercalated discs.',
+        },
+        {
+          q: `Where is non-vascularized hyaline cartilage (commonly recognized as "gristle" in culinary meats) functionally located in the human body?`,
+          ans: 'Covering the articulating surfaces of bones in synovial joints to reduce friction and absorb shock',
+          d: ['Lining the lumen of the gallbladder exclusively', 'Forming the contractile wall of the left ventricle', 'Anchoring dermal papillae to the hypodermal lipid matrix'],
+          exp: 'Articular (hyaline) cartilage caps the ends of opposing bones in joints, providing a smooth, slick, friction-reducing surface and compressive shock absorption.',
+          key: 'Cartilage ("gristle") caps joint bone ends to provide low-friction articulation.',
+        },
+        {
+          q: `What is the physiological role of melanocytes located within the stratum basale of the epidermis?`,
+          ans: 'Synthesizing the pigment melanin and transferring it to keratinocytes to shield nuclear DNA from harmful ultraviolet (UV) radiation',
+          d: ['Secreting watery perspiration to regulate core temperature', 'Producing dense collagen fibrils to reinforce the basement membrane', 'Synthesizing keratin fibers to waterproof the stratum corneum'],
+          exp: 'Melanocytes produce melanin granules, which are taken up by keratinocytes and positioned as a protective umbrella over the nucleus, absorbing damaging UV rays.',
+          key: 'Melanocytes produce melanin in stratum basale to protect DNA from ultraviolet radiation.',
+        },
+        {
+          q: `Which cutaneous exocrine glands secrete an oily lipid-rich substance (sebum) directly into hair follicles to soften skin and inhibit bacterial growth?`,
+          ans: 'Sebaceous glands',
+          d: ['Sudoriferous (sweat) glands', 'Ceruminous glands exclusively', 'Mammary glands'],
+          exp: 'Sebaceous (oil) glands secrete sebum into hair follicles and onto the skin surface to lubricate hair and skin, reduce water evaporation, and inhibit bacterial growth.',
+          key: 'Sebaceous glands secrete sebum (oil); sweat glands secrete perspiration.',
+        },
+      ];
+      const selected = items[(v + id) % items.length];
+      return {
+        q: `[Module 5 Tissues Revision Q${id}] Concerning ${sub}: ${selected.q}`,
+        ans: selected.ans,
+        d: selected.d,
+        exp: selected.exp,
+        key: selected.key,
+      };
+    },
+
+    blood_hematology: (sub, v) => {
+      const items = [
+        {
+          q: `When whole human blood is centrifuged in a microhematocrit tube, into which three distinct layers does it separate from top to bottom?`,
+          ans: 'Top: straw-colored plasma (~55%); Middle: thin buffy coat (<1%); Bottom: packed erythrocytes (~45%)',
+          d: [
+            'Top: dense erythrocytes (~75%); Middle: clear water; Bottom: albumin crystals',
+            'Top: buffy coat with platelets (~50%); Middle: plasma; Bottom: red cells (~20%)',
+            'Top: blood lipids (~90%); Middle: hemoglobin; Bottom: pure water',
+          ],
+          exp: 'Centrifugation separates blood by density: plasma (top, ~55%), buffy coat containing WBCs and platelets (middle, <1%), and packed red blood cells (bottom, ~45%).',
+          key: 'Whole blood centrifuges into plasma (~55%), buffy coat (<1%), and packed RBCs (~45%).',
+        },
+        {
+          q: `Why do mature mammalian red blood cells (erythrocytes) lack a nucleus and mitochondria?`,
+          ans: 'To maximize internal cytoplasmic volume for hemoglobin packaging and gas transport',
+          d: ['To allow rapid mitosis and division while circulating in blood vessels', 'To prevent immune antibodies from recognizing surface antigens', 'To convert cellular metabolism from aerobic to purely photosynthetic'],
+          exp: 'Erythrocytes lose their nuclei and mitochondria during reticulocyte maturation, creating an empty biconcave bag packed with ~250-300 million hemoglobin molecules per cell.',
+          key: 'RBCs lack nuclei to maximize space for hemoglobin and optimize oxygen carriage.',
+        },
+        {
+          q: `How many molecules of oxygen (O2) can be bound simultaneously by a single fully saturated hemoglobin molecule?`,
+          ans: '4 molecules of oxygen (one O2 bound to each of the four iron-containing heme groups)',
+          d: ['1 molecule of oxygen', '2 molecules of oxygen', '8 molecules of oxygen'],
+          exp: 'Each hemoglobin molecule is a tetramer of 4 globin polypeptide subunits, each containing one iron-bearing heme ring that binds one O2 molecule, giving a maximum of 4 O2.',
+          key: 'One hemoglobin molecule can bind up to 4 oxygen molecules.',
+        },
+        {
+          q: `Which leukocyte is the most abundant type in human peripheral blood (~60-70%), characterized by a multi-lobed nucleus and active phagocytosis of invading bacteria?`,
+          ans: 'Neutrophil',
+          d: ['Basophil', 'Lymphocyte', 'Eosinophil'],
+          exp: 'Neutrophils are the primary frontline phagocytes of the innate immune system, comprising 60-70% of total circulating leukocytes, with characteristic 3-5 lobed nuclei.',
+          key: 'Neutrophils are the most abundant WBC (~60-70%) and phagocytose bacteria.',
+        },
+        {
+          q: `In the three-step sequence of hemostasis (arrest of bleeding), what is the correct chronological order of physiological events following vascular injury?`,
+          ans: '1. Vascular spasm → 2. Platelet plug formation → 3. Blood coagulation (clotting cascade)',
+          d: [
+            '1. Fibrinolysis → 2. Coagulation → 3. Vascular dilation',
+            '1. Platelet plug → 2. Bone marrow erythropoiesis → 3. Capillary sprouting',
+            '1. Coagulation → 2. Vascular spasm → 3. Leukocyte migration',
+          ],
+          exp: 'Hemostasis initiates with immediate vasoconstriction (vascular spasm), followed by platelet adhesion and activation (platelet plug), and completed by enzyme cascade forming a fibrin mesh (coagulation).',
+          key: 'Hemostasis triad: Vascular spasm → Platelet plug → Coagulation (fibrin mesh).',
+        },
+        {
+          q: `If a student’s laboratory hematocrit capillary tube was loaded with blood, centrifuged, and showed packed red blood cells occupying 42% of total blood column height, this reading indicates:`,
+          ans: 'A normal hematocrit value (adult female reference range: 36.9% - 44.6%; male: 41.5% - 50.4%)',
+          d: ['Severe polycythemia vera requiring urgent therapeutic phlebotomy', 'Dangerous acute aplastic anemia with critical RBC loss', 'Severe systemic dehydration causing plasma loss'],
+          exp: 'Normal hematocrit (Packed Cell Volume, PCV) ranges between 37-45% in adult females and 42-50% in adult males. 42% falls squarely within the healthy physiological reference range.',
+          key: 'Normal hematocrit range is ~37-45% in females and ~42-50% in males.',
+        },
+        {
+          q: `A patient has Type B positive (B+) blood. Which antigens are present on their red blood cell membranes, and which antibodies circulate in their blood plasma?`,
+          ans: 'B antigens and Rh (D) antigen on RBCs; anti-A antibodies in plasma',
+          d: ['A antigens on RBCs; anti-B antibodies in plasma', 'Both A and B antigens on RBCs; neither anti-A nor anti-B antibodies in plasma', 'No antigens on RBCs; both anti-A and anti-B antibodies in plasma'],
+          exp: 'Type B blood expresses B carbohydrates on erythrocytes and naturally forms anti-A antibodies in plasma. The "+" indicates the presence of the Rh (D) surface antigen.',
+          key: 'Type B+ blood has B and Rh antigens on RBCs, and anti-A antibodies in plasma.',
+        },
+        {
+          q: `What is the pathological basis of a bruise (contusion / ecchymosis) appearing beneath intact skin following blunt physical trauma?`,
+          ans: 'Rupture of tiny superficial blood capillaries and leakage of red blood cells into surrounding dermis or hypodermis without breaking the skin surface',
+          d: ['Sudden localized proliferation of sebaceous glands releasing dark sebum', 'Rupture of lymphatic ducts causing bile leakage into skeletal muscle', 'Melanocyte hyperactivity producing excessive dark melanin over minutes'],
+          exp: 'A bruise occurs when blunt impact damages and tears fragile capillaries in the dermis or subcutaneous tissue. Escaped RBCs leak into interstitial spaces, degrading from dark red to blue, green, and yellow as hemoglobin is metabolized.',
+          key: 'A bruise is caused by ruptured capillaries leaking red blood cells under intact skin.',
+        },
+      ];
+      const selected = items[(v + id) % items.length];
+      return {
+        q: `[Module 6 Blood Revision Q${id}] Regarding ${sub}: ${selected.q}`,
+        ans: selected.ans,
+        d: selected.d,
+        exp: selected.exp,
+        key: selected.key,
+      };
+    },
+
+    respiratory: (sub, v) => {
+      const items = [
+        {
+          q: `What is the exact anatomical conduction pathway followed by an inspired molecule of oxygen traveling from the external environment down to the site of gas exchange?`,
+          ans: 'Nasal Cavity → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli',
+          d: [
+            'Pharynx → Nasal Cavity → Trachea → Esophagus → Alveoli',
+            'Nasal Cavity → Larynx → Pharynx → Bronchioles → Trachea → Alveoli',
+            'Mouth → Trachea → Larynx → Pharynx → Pleural cavity → Alveoli',
+          ],
+          exp: 'Air enters through the nose/mouth, traverses the pharynx, larynx, and trachea, then branches into primary/secondary/tertiary bronchi, terminal bronchioles, and terminates in alveolar sacs.',
+          key: 'Conduction pathway: Nose → Pharynx → Larynx → Trachea → Bronchi → Bronchioles → Alveoli.',
+        },
+        {
+          q: `During quiet resting inspiration, which active muscular actions expand thoracic cavity volume, and how does this affect intrapulmonary pressure according to Boyle’s law?`,
+          ans: 'The diaphragm contracts and flattens downward while external intercostals elevate ribs; thoracic volume increases, dropping intrapulmonary pressure below atmospheric pressure (-1 mmHg)',
+          d: [
+            'The diaphragm relaxes upward; volume decreases and intrapulmonary pressure spikes to +10 mmHg',
+            'Internal intercostals contract forcefully, compressing lungs and forcing air inward',
+            'Abdominal muscles push viscera superiorly to draw air into the pleural space',
+          ],
+          exp: 'Inspiration is active: the diaphragm flattens and external intercostals lift ribs, expanding thoracic volume. Per Boyle’s law (P ∝ 1/V), increased volume lowers intrapulmonary pressure below atmospheric, causing air to rush in.',
+          key: 'Active inspiration: diaphragm contraction increases volume → drops pressure → air rushes in.',
+        },
+        {
+          q: `Why is normal, quiet expiration considered an entirely passive process at rest?`,
+          ans: 'It requires no muscle contraction, relying instead on the natural elastic recoil of stretched lung tissue and relaxation of the diaphragm and external intercostals',
+          d: ['The heart actively sucks air out of the bronchial tree during ventricular diastole', 'Atmospheric pressure drops to absolute zero during each exhalation cycle', 'Smooth muscles in the trachea contract violently to expel expired air'],
+          exp: 'At rest, expiration is completely passive: inspiratory muscles simply relax, and the elastic fibers within lungs and chest wall recoil inward, decreasing thoracic volume and raising intrapulmonary pressure above atmospheric.',
+          key: 'Quiet expiration is passive, driven by elastic recoil of lungs and chest wall.',
+        },
+        {
+          q: `What is the crucial physiological function of pulmonary surfactant, which is synthesized and secreted by Type II alveolar cells?`,
+          ans: 'Reducing the surface tension of the thin aqueous film lining alveoli, preventing alveolar collapse (atelectasis) upon exhalation',
+          d: ['Directly neutralizing bacterial toxins by acting as an acidic detergent', 'Converting dissolved bicarbonate back into gaseous carbon dioxide', 'Binding oxygen molecules with higher affinity than fetal hemoglobin'],
+          exp: 'Water molecules lining alveolar walls exert strong surface tension that pulls alveoli inward. Surfactant disrupts hydrogen bonding between water molecules, reducing surface tension and preventing collapse.',
+          key: 'Pulmonary surfactant lowers surface tension to prevent alveolar collapse (atelectasis).',
+        },
+        {
+          q: `By which physical process do oxygen (O2) and carbon dioxide (CO2) cross the microscopic respiratory membrane between alveoli and pulmonary capillary blood?`,
+          ans: 'Simple passive diffusion down their respective partial pressure gradients',
+          d: ['Active primary transport utilizing ATP-driven transmembrane pumps', 'Bulk hydraulic filtration driven by systemic systolic pressure', 'Pinocytosis executed by alveolar capillary endothelial cells'],
+          exp: 'Gas exchange in the lungs is purely passive: O2 diffuses from high partial pressure in alveoli (~104 mmHg) to lower pressure in capillary blood (~40 mmHg), while CO2 diffuses from high in capillary (~45 mmHg) to lower in alveoli (~40 mmHg).',
+          key: 'Gas exchange occurs via simple passive diffusion down partial pressure gradients.',
+        },
+        {
+          q: `What is the healthy, expected resting arterial oxygen saturation (SpO2) range measured non-invasively by a pulse oximeter placed on a patient's fingertip?`,
+          ans: '95% to 100%',
+          d: ['70% to 75%', '50% to 60%', '80% to 88%'],
+          exp: 'In a healthy individual breathing ambient room air at sea level, normal arterial hemoglobin oxygen saturation (SpO2) is between 95% and 100%. Readings consistently below 90% indicate clinical hypoxemia.',
+          key: 'Normal resting pulse oximetry (SpO2) reference range is 95% to 100%.',
+        },
+        {
+          q: `How does acute pneumonia impair pulmonary gas exchange in an affected lung segment?`,
+          ans: 'Alveoli become inflamed and fill with infectious fluid, inflammatory exudate, and pus (consolidation), dramatically thickening the diffusion barrier',
+          d: ['Permanent loss of hyaline cartilage rings in the cervical trachea', 'Rupture of the thoracic diaphragm causing stomach displacement into chest', 'Complete paralysis of the brainstem medulla respiratory centers'],
+          exp: 'Pneumonia is an infection that triggers alveolar inflammation. Alveoli fill with fluid and exudate (consolidation), drastically increasing the diffusion distance for oxygen and causing hypoxemia.',
+          key: 'Pneumonia fills alveoli with inflammatory fluid/pus, impairing oxygen diffusion.',
+        },
+      ];
+      const selected = items[(v + id) % items.length];
+      return {
+        q: `[Module 8 Respiratory Revision Q${id}] Regarding ${sub}: ${selected.q}`,
+        ans: selected.ans,
+        d: selected.d,
+        exp: selected.exp,
+        key: selected.key,
+      };
+    },
   };
 
   const genFn = contentMap[subjectId];
@@ -1700,7 +1824,7 @@ function generateVariantQuestion(
   };
 }
 
-// Build the full 1,000 Questions Bank!
+// Build the full Questions Bank with exactly 100 questions per curriculum module (400 questions total)
 let cachedQuestions: MCQQuestion[] | null = null;
 
 export function getAllQuestions(): MCQQuestion[] {
@@ -1712,10 +1836,6 @@ export function getAllQuestions(): MCQQuestion[] {
     'tissues_integumentary',
     'blood_hematology',
     'respiratory',
-    'cell_biology',
-    'chemistry',
-    'physics_biomechanics',
-    'systems_physiology',
   ];
 
   let currentStartIndex = 1;

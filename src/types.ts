@@ -2,11 +2,7 @@ export type SubjectId =
   | 'cardiovascular'
   | 'tissues_integumentary'
   | 'blood_hematology'
-  | 'respiratory'
-  | 'cell_biology'
-  | 'chemistry'
-  | 'physics_biomechanics'
-  | 'systems_physiology';
+  | 'respiratory';
 
 export interface SubjectMeta {
   id: SubjectId;

@@ -130,21 +130,19 @@ export default function App() {
             <div className="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
               <Activity className="w-3.5 h-3.5" />
             </div>
-            <span className="font-semibold text-slate-800">MedPulse 1,000 MCQ Platform</span>
+            <span className="font-semibold text-slate-800">GEDU404B Human Body Revision Platform</span>
             <span className="text-slate-300">•</span>
             <span>Applied Structure and Function of the Human Body (GEDU404B/2602)</span>
           </div>
 
-          <div className="flex items-center gap-4 text-slate-400">
-            <span>Cardiovascular</span>
+          <div className="flex items-center gap-3 text-slate-400">
+            <span>Cardiovascular (Mod 7)</span>
             <span>•</span>
-            <span>Tissues</span>
+            <span>Tissues & Skin (Mod 5)</span>
             <span>•</span>
-            <span>Blood</span>
+            <span>Blood & Hematology (Mod 6)</span>
             <span>•</span>
-            <span>Respiratory</span>
-            <span>•</span>
-            <span>Physiology</span>
+            <span>Respiratory (Mod 8)</span>
           </div>
         </div>
         <p className="text-center text-slate-400 mt-4 text-xs font-medium">done by Prabu and Mustafa</p>
